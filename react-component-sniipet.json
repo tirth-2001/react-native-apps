@@ -1,0 +1,14 @@
+{
+  ".source.js": {
+    "React Native Functional Component File": {
+      "prefix": "rnf",
+      "body": "import React from 'react';\nimport {\n  View,\n  Text,\n  StyleSheet,\n} from 'react-native';\n\nconst ${1:MyComponent} = () => {\n   \n  return (\n      ${2:<View style={styles.container\\}>\n        ${3:<Text>Writehere</Text>}\n      </View>}\n    );$5\n}\n\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n  },\n});\n\nexport default ${1:MyComponent};\n"
+    }
+  },
+  ".source1.js": {
+    "React Native Component File": {
+      "prefix": "rnc",
+      "body": "import React, { Component } from 'react';\nimport {\n  View,\n  Text,\n  StyleSheet,\n} from 'react-native';\n\nexport default class ${1:MyComponent} extends Component {\n  render() {\n    return (\n      ${2:<View style={styles.container\\}>\n        ${3:<Text>Writehere</Text>}\n      </View>}\n    );$5\n  }\n}\n\nconst styles = StyleSheet.create({\n  container: {\n    flex: 1,\n  },\n});"
+    }
+  }
+}
